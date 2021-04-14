@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "lint": "standard {lib,test}/** | snazzy",
+    "lint": "standard {lib,test}/**/*.js | snazzy",
     "lint:ci": "standard {lib,test}/**",
     "lint:lockfile": "lockfile-lint --path yarn.lock --allowed-hosts yarn registry.npmjs.com --allowed-schemes 'https:' 'git+https:'",
     "format": "prettier --write lib/**/*.js",
