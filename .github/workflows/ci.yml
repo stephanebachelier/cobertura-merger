@@ -1,0 +1,59 @@
+name: CI / CD
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    strategy:
+      matrix:
+        node-version: [10.22]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: '10.22'
+
+      - name: Cache node modules
+        uses: actions/cache@v2.1.4
+        with:
+          path: node_modules
+          key: yarn-deps-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            yarn-deps-${{ hashFiles('yarn.lock') }}
+
+      - name: Setup npmrc
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_NPM_TOKEN }}" | tee -a .npmrc
+          echo "always-auth=true" | tee -a .npmrc
+
+      - name: Install deps
+        run: |
+          yarn --frozen-lockfile --ignore-scripts --ignore-engines
+        env:
+          CI: true
+
+      - name: Lint code
+        run: |
+          yarn lint
+
+      - name: Lint lock file
+        run: |
+          yarn lint:lockfile
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high
+
+      - name: Build
+        run: |
+          yarn build
