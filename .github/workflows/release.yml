@@ -29,20 +29,11 @@ jobs:
           restore-keys: |
             yarn-deps-${{ hashFiles('yarn.lock') }}
 
-      - name: Setup npmrc
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_NPM_TOKEN }}" | tee -a .npmrc
-          echo "always-auth=true" | tee -a .npmrc
-
       - name: Install deps
         run: |
           yarn --frozen-lockfile --ignore-scripts --ignore-engines
         env:
           CI: true
-
-      - name: Build module
-        run: |
-          yarn build
 
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
