@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.0...v1.0.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* export merger binary ([cec6480](https://github.com/stephanebachelier/cobertura-merger/commit/cec648067fac55af6d6fa3dfcb7c1a03a7fa5256))
+
 # 1.0.0 (2021-04-14)
 
 
