@@ -9,6 +9,9 @@
   "author": "stephane.bachelier@gmail.com",
   "source": "lib/index.js",
   "license": "Apache-2",
+  "bin": {
+    "coberturaMerger": "./bin/merge/index.js"
+  },
   "keywords": [
     "coverage",
     "cobertura",
