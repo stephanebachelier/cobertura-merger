@@ -1,20 +1,23 @@
 const fs = require('fs-extra')
-const { startsWith } = require('lodash')
 const path = require('path')
 const log = require('debug')('merger:bin')
 
 const processDir = async (cli, dir) => {
   try {
+    log('validating access to dir %s', dir)
     const stats = await fs.stat(dir)
+
     if (!stats.isDirectory()) {
       console.log(`${dir} is not a directory`)
       return cli.showHelp(2)
     }
 
     return (await fs.readdir(dir, { withFileTypes: true }))
-      .filter(dirent =>
-        dirent.isFile() && dirent.name.substr(-3).toLowerCase() === 'xml'
-      )
+      .filter(dirent => {
+        const extension = dirent.name.substr(-3).toLowerCase()
+        log('found file %s with extension %s', dirent.name, extension)
+        return dirent.isFile() && extension === 'xml'
+      })
       .map(dirent => path.join(dir, dirent.name))
   } catch (e) {
     console.log(`Invalid directory ${dir}`)
@@ -27,13 +30,14 @@ const processFiles = async (cli, files) => {
     return (
       await Promise.all(
         files.map(async file => {
-          const isFile = (await fs.stat(file)).isFile()
+          log('validating access to file %s', file)
 
-          if (!isFile) {
-            console.log(`Invalid file %s (ignored).`, file)
+          if (!(await fs.stat(file)).isFile()) {
+            log(`Invalid file %s (ignored).`, file)
+            return null
           }
 
-          return isFile ? file : null
+          return file
         }))
     ).filter(file => file !== null)
   } catch (e) {
