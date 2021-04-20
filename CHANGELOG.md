@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.0...v1.1.1) (2021-04-20)
+
+
+### Bug Fixes
+
+* **validation:** fix conditions between dir and file option ([b4ab160](https://github.com/stephanebachelier/cobertura-merger/commit/b4ab160532ac97e4b6ead82321cf5380779a1974))
+* ignore empty coverage report ([71a3786](https://github.com/stephanebachelier/cobertura-merger/commit/71a3786d749075ed5e877500aa4b48586ca60cfd))
+* **lib/validation:** fix error if providing directory ([d65a4fe](https://github.com/stephanebachelier/cobertura-merger/commit/d65a4fe47d5b25210fbfa930857dbd197d9a6539))
+
 # [1.1.0](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.2...v1.1.0) (2021-04-20)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "cobertura-merger",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Merge multiple cobertura code coverage reports",
   "repository": {
     "type": "git",
