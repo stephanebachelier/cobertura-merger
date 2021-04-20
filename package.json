@@ -12,6 +12,13 @@
   "bin": {
     "coberturaMerger": "./bin/merge/index.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "keywords": [
     "coverage",
     "cobertura",
