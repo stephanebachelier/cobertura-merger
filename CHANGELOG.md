@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.2...v1.1.0) (2021-04-20)
+
+
+### Features
+
+* **merge/validation:** add some logs ([51da328](https://github.com/stephanebachelier/cobertura-merger/commit/51da3281ce673bf6a6493deb9d102329a557543c))
+
 ## [1.0.2](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.1...v1.0.2) (2021-04-20)
 
 
