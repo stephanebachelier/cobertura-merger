@@ -10,7 +10,7 @@
   "source": "lib/index.js",
   "license": "Apache-2",
   "bin": {
-    "coberturaMerger": "./bin/merge/index.js"
+    "coberturaMerger": "./cli.js"
   },
   "files": [
     "bin",
