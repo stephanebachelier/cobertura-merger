@@ -1,5 +1,5 @@
-const validation = require('./validation')
-const merge = require('../../lib')
+const validation = require('./lib/validation')
+const merge = require('./lib')
 
 const cli = require('meow')(`
   Usage
