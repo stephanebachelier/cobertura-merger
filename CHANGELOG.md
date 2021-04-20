@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.1...v1.0.2) (2021-04-20)
+
+
+### Bug Fixes
+
+* add missing files ([43e78ec](https://github.com/stephanebachelier/cobertura-merger/commit/43e78ec7c79cd963816f492eb178d78b3d2fb724))
+
 ## [1.0.1](https://github.com/stephanebachelier/cobertura-merger/compare/v1.0.0...v1.0.1) (2021-04-19)
 
 
