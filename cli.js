@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const validation = require('./lib/validation')
 const merge = require('./lib')
 
