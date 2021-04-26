@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.1...v1.1.2) (2021-04-26)
+
+
+### Bug Fixes
+
+* **cli:** add shebang ([16ae6a1](https://github.com/stephanebachelier/cobertura-merger/commit/16ae6a1185c07676364537175037b9fe5fc95b3d))
+
 ## [1.1.1](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.0...v1.1.1) (2021-04-20)
 
 
