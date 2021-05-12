@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.2...v1.1.3) (2021-05-12)
+
+
+### Bug Fixes
+
+* upgrade debug from 4.3.1 to 4.3.2 ([c946c24](https://github.com/stephanebachelier/cobertura-merger/commit/c946c24aac422bc39fe1ca9aa2c58c603c8023c4))
+
 ## [1.1.2](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.1...v1.1.2) (2021-04-26)
 
 
