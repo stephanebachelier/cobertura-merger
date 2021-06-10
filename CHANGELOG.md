@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.3...v1.1.4) (2021-06-10)
+
+
+### Bug Fixes
+
+* **cli/validation:** fix issue with undefined flags ([d7b3199](https://github.com/stephanebachelier/cobertura-merger/commit/d7b3199f76d7c4a8647c8570aba8dbad668f7f68))
+
 ## [1.1.3](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.2...v1.1.3) (2021-05-12)
 
 
