@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.4...v1.1.5) (2021-06-10)
+
+
+### Bug Fixes
+
+* **report:** add support for new lines, methods or branches ([830649c](https://github.com/stephanebachelier/cobertura-merger/commit/830649c8c096cb9a44bda22f9e35b8a975ffa1f3))
+
 ## [1.1.4](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.3...v1.1.4) (2021-06-10)
 
 
