@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.6...v1.1.7) (2021-06-16)
+
+
+### Bug Fixes
+
+* **report:** fix stats computing ([1f0d1e8](https://github.com/stephanebachelier/cobertura-merger/commit/1f0d1e89b6009f5bb1a8c8ca2b42fa1364e33eef))
+
 ## [1.1.6](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.5...v1.1.6) (2021-06-14)
 
 
