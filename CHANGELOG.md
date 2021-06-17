@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.7...v1.2.0) (2021-06-17)
+
+
+### Features
+
+* add support for a default pkg if none given ([281ba69](https://github.com/stephanebachelier/cobertura-merger/commit/281ba695e41f8a14f29de69ee38ae10bddfdbf61))
+
 ## [1.1.7](https://github.com/stephanebachelier/cobertura-merger/compare/v1.1.6...v1.1.7) (2021-06-16)
 
 
